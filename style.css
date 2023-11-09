@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-img) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -139,4 +140,14 @@ body * {
 
 #social-links a:hover {
   background: var(--social-links-hover);
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-img: url("./assets/bg-desktop.jpg");
+  }
+
+  .light {
+    --bg-img: url("./assets/bg-desktop-light.jpg");
+  }
 }
